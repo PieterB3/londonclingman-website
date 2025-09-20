@@ -13,9 +13,20 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {
-    // Initialize theme from localStorage or default to dark
+    // Initialize theme from localStorage or default to dark for first-time visitors
     if (typeof window !== 'undefined') {
-      return (localStorage.getItem('theme') as Theme) || 'dark'
+      const savedTheme = localStorage.getItem('theme') as Theme
+      if (savedTheme) {
+        return savedTheme
+      }
+      // Check if user has visited before by looking for any theme preference
+      const hasVisited = localStorage.getItem('hasVisited')
+      if (!hasVisited) {
+        // First time visitor - default to dark mode
+        localStorage.setItem('hasVisited', 'true')
+        return 'dark'
+      }
+      return 'dark' // Default to dark mode
     }
     return 'dark'
   })
@@ -24,7 +35,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     // Apply theme to document
     document.documentElement.classList.remove('light', 'dark')
     document.documentElement.classList.add(theme)
+    // Save theme preference to localStorage
     localStorage.setItem('theme', theme)
+    // Mark that user has visited and made a choice
+    localStorage.setItem('hasVisited', 'true')
   }, [theme])
 
   const toggleTheme = () => {

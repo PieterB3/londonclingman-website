@@ -40,7 +40,7 @@ export default function Navigation({ isMenuOpen, onMenuToggle }: NavigationProps
       {/* Hamburger Menu Button - Top Left */}
       <button
         onClick={onMenuToggle}
-        className={`fixed top-4 left-6 z-50 p-3 bg-black/80 dark:bg-white/80 backdrop-blur-sm rounded-full text-white dark:text-black hover:bg-yellow-400/20 dark:hover:bg-orange-400/20 hover:text-yellow-400 dark:hover:text-orange-400 transition-all duration-500 ${isScrolled ? 'opacity-50' : 'opacity-100'}`}
+        className={`fixed top-4 left-6 z-[60] p-3 bg-black/80 dark:bg-white/80 backdrop-blur-sm rounded-full text-white dark:text-black hover:bg-yellow-400/20 dark:hover:bg-orange-400/20 hover:text-yellow-400 dark:hover:text-orange-400 transition-all duration-500 ${isScrolled ? 'opacity-50' : 'opacity-100'}`}
       >
         <span className="sr-only">Open main menu</span>
         <svg
@@ -65,7 +65,7 @@ export default function Navigation({ isMenuOpen, onMenuToggle }: NavigationProps
 
       {/* Navigation Menu Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-black/90 dark:bg-white/90 backdrop-blur-md transition-colors duration-300">
+        <div className="fixed inset-0 z-[70] bg-black/90 dark:bg-white/90 backdrop-blur-md transition-colors duration-300">
           <div className="flex items-center justify-center h-full">
             <div className="text-center space-y-8">
               <h1 className="text-4xl md:text-6xl font-bold text-yellow-400 dark:text-orange-400 mb-12 transition-colors duration-300">LONDON CLINGMAN</h1>

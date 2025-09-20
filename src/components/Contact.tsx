@@ -183,7 +183,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-yellow-400 dark:bg-orange-400 text-black dark:text-white py-4 px-8 rounded-xl font-bold text-lg hover:bg-yellow-300 dark:hover:bg-orange-300 hover-lift hover-glow focus:outline-none focus:ring-2 focus:ring-yellow-400 dark:focus:ring-orange-400 transition-all duration-300"
+                className="w-full border-2 border-yellow-400 dark:border-orange-400 text-yellow-400 dark:text-orange-400 py-4 px-8 rounded-xl font-bold text-lg hover:bg-yellow-400 dark:hover:bg-orange-400 hover:text-black dark:hover:text-white hover-lift hover-glow focus:outline-none focus:ring-2 focus:ring-yellow-400 dark:focus:ring-orange-400 transition-all duration-300"
               >
                 SEND MESSAGE
               </button>

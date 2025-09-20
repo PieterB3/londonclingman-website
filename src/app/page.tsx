@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Hero from '@/components/Hero'
-import Stats from '@/components/Stats'
 import About from '@/components/About'
 import VideoGallery from '@/components/VideoGallery'
 import Contact from '@/components/Contact'
@@ -23,7 +22,6 @@ export default function Home() {
         <Navigation isMenuOpen={isMenuOpen} onMenuToggle={handleMenuToggle} />
         <StickyHeader onMenuToggle={handleMenuToggle} />
         <Hero />
-        <Stats />
         <About />
         <VideoGallery />
         <Contact />
