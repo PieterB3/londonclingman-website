@@ -9,13 +9,13 @@ export default function ThemeToggle() {
     <button
       onClick={toggleTheme}
       className={`fixed top-6 right-6 z-50 p-3 backdrop-blur-sm rounded-full transition-all duration-300 ${
-        theme === 'dark' 
+        theme === 'light' 
           ? 'bg-black/80 text-white hover:bg-yellow-400/20 hover:text-yellow-400' 
           : 'bg-white/80 text-black hover:bg-orange-400/20 hover:text-orange-400'
       }`}
     >
       <span className="sr-only">Toggle theme</span>
-      {theme === 'dark' ? (
+      {theme === 'light' ? (
         // Sun icon for light mode
         <svg
           className="h-6 w-6"
