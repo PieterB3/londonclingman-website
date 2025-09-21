@@ -24,7 +24,7 @@ export default function StickyHeader({ onMenuToggle }: StickyHeaderProps) {
   if (!isVisible) return null
 
   return (
-    <div className={`fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black border-b border-yellow-400/20 dark:border-orange-400/20 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'}`}>
+    <div className={`fixed top-0 left-0 right-0 z-50 border-b border-yellow-400/20 dark:border-orange-400/20 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'}`} style={{backgroundColor: 'var(--bg-primary)'}}>
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Hamburger Menu Button - Far left */}
