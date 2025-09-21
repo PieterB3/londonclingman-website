@@ -37,10 +37,10 @@ export default function Navigation({ isMenuOpen, onMenuToggle }: NavigationProps
 
   return (
     <>
-      {/* Hamburger Menu Button - Top Left */}
+      {/* Hamburger Menu Button - Top Left - Hidden when scrolled */}
       <button
         onClick={onMenuToggle}
-        className={`fixed top-4 left-6 z-[60] p-3 bg-black/80 dark:bg-white/80 backdrop-blur-sm rounded-full text-white dark:text-black hover:bg-yellow-400/20 dark:hover:bg-orange-400/20 hover:text-yellow-400 dark:hover:text-orange-400 transition-all duration-500 ${isScrolled ? 'opacity-50' : 'opacity-100'}`}
+        className={`fixed top-4 left-6 z-[60] p-3 bg-black/80 dark:bg-white/80 backdrop-blur-sm rounded-full text-white dark:text-black hover:bg-yellow-400/20 dark:hover:bg-orange-400/20 hover:text-yellow-400 dark:hover:text-orange-400 transition-all duration-500 ${isScrolled ? 'hidden' : 'block'}`}
       >
         <span className="sr-only">Open main menu</span>
         <svg

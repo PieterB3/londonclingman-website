@@ -118,6 +118,32 @@ This is a Next.js website project for London Clingman. The project appears to be
   - Triggered new Vercel deployment with latest changes
   - **NEW LIVE URL**: https://londonclingman-website-1awxrxa3r-pieterb3s-projects.vercel.app
   - **Deployment includes**: Background images, divider line, outline buttons, and duplicate element fixes
+- ✅ **THEME NAMES FIXED!**
+  - Swapped theme names to match actual appearance
+  - When state says 'light' it now shows dark theme (correct)
+  - When state says 'dark' it now shows light theme (correct)
+  - Updated ThemeContext type from 'dark' | 'light' to 'light' | 'dark'
+  - Fixed toggle logic and ThemeToggle component icons
+  - **NEW LIVE URL**: https://londonclingman-website-8okfya1ii-pieterb3s-projects.vercel.app
+- ✅ **HERO IMAGE UPDATED!**
+  - Changed hero background image from `/1191934606088320375.JPG.jpeg` to `/7757821833311002603.jpeg`
+  - Now uses the same image as the last video in the gallery (Team Leadership)
+  - Updated both desktop and mobile hero sections
+  - **Ready for additional changes before Vercel deployment**
+- ✅ **BOXING CHAMPION LAYOUT MIMICKED!**
+  - **Hero Section**: Large background image with stats overlay in bottom left
+  - **Typography**: Changed to bold Arial font matching boxing site style
+  - **Color Scheme**: Gold/orange accents with dark overlays
+  - **Right Sidebar**: HISTORY and NEWS boxes with background images and dark overlays
+  - **Stats Overlay**: Professional stats table with bordered rows like boxing site
+  - **Mobile Layout**: Updated to match desktop design with proper scaling
+  - **Result**: Professional, bold design matching the boxing champion website aesthetic
+- ✅ **VIDEO SECTION ENHANCED!**
+  - **Larger Video**: Increased from `max-w-sm` to `max-w-lg` for more space
+  - **VIEW MORE Button**: Added back below video with smooth scroll functionality
+  - **Scroll Navigation**: Button scrolls to video gallery section on single page
+  - **Clean Design**: Removed header text, kept just video and button
+  - **Result**: Better video visibility with functional navigation
 
 **Pre-deployment Checklist Results:**
 - ✅ Linting passed with no errors

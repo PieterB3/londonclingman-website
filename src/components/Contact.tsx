@@ -27,12 +27,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-black dark:bg-white relative overflow-hidden transition-colors duration-300">
-      {/* Background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-cyan-500/20 to-purple-500/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-pink-500/20 to-cyan-500/20 rounded-full blur-3xl"></div>
-      </div>
+    <section id="contact" className="py-20 bg-transparent relative overflow-hidden transition-colors duration-300">
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">

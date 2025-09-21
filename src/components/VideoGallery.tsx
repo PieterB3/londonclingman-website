@@ -49,12 +49,7 @@ export default function VideoGallery() {
   }
 
   return (
-    <section id="videos" className="py-20 bg-black dark:bg-white relative overflow-hidden transition-colors duration-300">
-      {/* Background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-tl from-pink-500/20 to-cyan-500/20 rounded-full blur-3xl"></div>
-      </div>
+    <section id="videos" className="py-20 bg-transparent relative overflow-hidden transition-colors duration-300">
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
@@ -135,23 +130,6 @@ export default function VideoGallery() {
           ))}
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center mt-16 animate-slide-up" style={{animationDelay: '1s'}}>
-          <p className="text-gray-300 dark:text-gray-600 mb-6 text-lg transition-colors duration-300">
-            Want to see more highlights? Check out the full channel:
-          </p>
-          <a
-            href="https://youtube.com/@londonclingman" // Placeholder - would be actual YouTube channel
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center bg-glass border-2 border-red-500 text-red-400 px-8 py-4 rounded-full font-bold text-lg hover-lift hover-glow transition-all duration-300"
-          >
-            <svg className="w-6 h-6 mr-3 group-hover:animate-pulse" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-            </svg>
-            VIEW FULL CHANNEL
-          </a>
-        </div>
       </div>
     </section>
   )

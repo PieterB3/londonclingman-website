@@ -9,7 +9,7 @@ interface StickyHeaderProps {
 
 export default function StickyHeader({ onMenuToggle }: StickyHeaderProps) {
   const [isVisible, setIsVisible] = useState(false)
-  const { toggleTheme } = useTheme()
+  const { theme, toggleTheme } = useTheme()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +24,7 @@ export default function StickyHeader({ onMenuToggle }: StickyHeaderProps) {
   if (!isVisible) return null
 
   return (
-    <div className={`fixed top-0 left-0 right-0 z-50 bg-black dark:bg-white border-b border-yellow-400/20 dark:border-orange-400/20 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'}`}>
+    <div className={`fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black border-b border-yellow-400/20 dark:border-orange-400/20 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'}`}>
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Hamburger Menu Button - Far left */}
@@ -45,7 +45,11 @@ export default function StickyHeader({ onMenuToggle }: StickyHeaderProps) {
           </button>
           
           {/* LC Logo - Centered */}
-          <span className="text-2xl font-light text-white dark:text-black transition-opacity duration-500" style={{fontFamily: 'serif', fontStyle: 'italic'}}>LC</span>
+          <img 
+                src={theme === 'light' ? "/LC-Logo-White-Square.png" : "/LC-Logo-Balck-Square.png"}
+            alt="LC Logo" 
+            className="h-8 w-auto transition-opacity duration-500"
+          />
           
           {/* Theme Toggle Button - Far right */}
           <button

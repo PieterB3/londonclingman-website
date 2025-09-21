@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <ThemeProvider>
-      <main className="min-h-screen bg-black dark:bg-white transition-colors duration-300">
+      <main className="min-h-screen bg-white dark:bg-black transition-colors duration-300">
         <Navigation isMenuOpen={isMenuOpen} onMenuToggle={handleMenuToggle} />
         <StickyHeader onMenuToggle={handleMenuToggle} />
         <Hero />
