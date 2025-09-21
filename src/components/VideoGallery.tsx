@@ -12,7 +12,7 @@ export default function VideoGallery() {
       title: '2024 Season Highlights',
       description: 'Top plays, goals, and assists from London\'s 2024 season with Calgary Fire',
       thumbnail: '/3823040932616092287.JPG.jpeg',
-      videoId: 'PLACEHOLDER_VIDEO_1', // Replace with actual YouTube ID
+      videoId: 'CKj5JXR3pXY', // London Clingman highlights video
       type: 'youtube'
     },
     {
