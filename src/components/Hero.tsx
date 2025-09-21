@@ -163,14 +163,22 @@ export default function Hero() {
                 </div>
               </div>
               
-              <button className="px-6 py-3 rounded-lg font-bold text-sm border-2 border-yellow-400 dark:border-orange-400 text-yellow-400 dark:text-orange-400 hover:bg-yellow-400 dark:hover:bg-orange-400 hover:text-black dark:hover:text-white transition-colors duration-300 self-start">
+              <button 
+                onClick={() => {
+                  const aboutSection = document.getElementById('about');
+                  if (aboutSection) {
+                    aboutSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="px-6 py-3 rounded-lg font-bold text-sm border-2 border-yellow-400 dark:border-orange-400 text-yellow-400 dark:text-orange-400 hover:bg-yellow-400 dark:hover:bg-orange-400 hover:text-black dark:hover:text-white transition-colors duration-300 self-start"
+              >
                 MEET LONDON →
               </button>
             </div>
           </div>
 
           {/* NEWS Box - Bottom 50% */}
-          <div className="h-1/2 relative bg-black dark:bg-black transition-colors duration-300">
+          <div className="h-1/2 relative transition-colors duration-300" style={{backgroundColor: 'var(--bg-primary)'}}>
             
             {/* Content */}
             <div className="relative z-10 h-full flex flex-col justify-center items-center p-6">
@@ -387,14 +395,22 @@ export default function Hero() {
             </div>
             </div>
               
-              <button className="px-6 py-3 rounded-lg font-bold text-sm border-2 border-yellow-400 dark:border-orange-400 text-yellow-400 dark:text-orange-400 hover:bg-yellow-400 dark:hover:bg-orange-400 hover:text-black dark:hover:text-white transition-colors duration-300 self-start">
+              <button 
+                onClick={() => {
+                  const aboutSection = document.getElementById('about');
+                  if (aboutSection) {
+                    aboutSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="px-6 py-3 rounded-lg font-bold text-sm border-2 border-yellow-400 dark:border-orange-400 text-yellow-400 dark:text-orange-400 hover:bg-yellow-400 dark:hover:bg-orange-400 hover:text-black dark:hover:text-white transition-colors duration-300 self-start"
+              >
                 MEET LONDON →
               </button>
             </div>
           </div>
           
           {/* NEWS Mobile Box */}
-          <div className="relative bg-black dark:bg-black rounded-lg transition-colors duration-300 min-h-[200px]">
+          <div className="relative rounded-lg transition-colors duration-300 min-h-[200px]" style={{backgroundColor: 'var(--bg-primary)'}}>
             
             {/* Content */}
             <div className="relative z-10 p-6 h-full flex flex-col justify-center items-center">
